@@ -1,0 +1,56 @@
+.slider {
+    position: relative;
+}
+
+.slider__arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 54px;
+    background-color: #00C470;
+    border-radius: 50%;
+
+    &--left {
+        left: -100px;
+        top: 53px;
+    }
+
+    &--right {
+        right: -100px;
+        top: 53px;
+    }
+}
+
+.slider__text {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+
+    p {
+        margin-bottom: 15px;
+    }
+}
+
+.slider__author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.slider__avatar {
+    margin-right: 20px;
+}
+
+.slider__job {
+    margin-bottom: 5px;
+    display: block;
+    color: #00C470;
+}

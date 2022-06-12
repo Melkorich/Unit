@@ -1,0 +1,35 @@
+.tasks {
+    padding: 80px 0 40px;
+}
+
+.tasks__row {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tasks__row {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+
+.tasks__content {
+    width: 570px;
+}
+
+.tasks__header {
+    margin-bottom: 30px;
+}
+
+.tasks__title {
+    margin-bottom: 30px;
+}
+
+.tasks__text {
+    width: 400px;
+}
+
+.tasks__image {
+    width: 356px;
+}

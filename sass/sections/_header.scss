@@ -1,0 +1,74 @@
+.header {
+    position: relative;
+    height: 870px;
+    background-image: url('./../images/header/header-bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        @extend %overlay;
+    }
+
+    &__inner {
+        padding-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: #fff;
+        z-index: 2;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 100%;
+        text-transform: uppercase;
+    }
+
+    &__descr {
+        margin: 0 auto 70px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        max-width: 730px;
+
+        p {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+
+        .input {
+            margin-right: 20px;
+        }
+    }
+
+    &__scroll {
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

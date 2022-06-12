@@ -1,0 +1,51 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: #808080;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.wrapper>* {
+    /* sticky footer */
+    flex-shrink: 0;
+}
+
+.footer {
+    /* sticky footer */
+    margin-top: auto;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.none {
+    display: none !important;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent);
+
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+    color: var(--title-color);
+}

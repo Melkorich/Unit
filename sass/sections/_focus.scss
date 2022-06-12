@@ -1,0 +1,31 @@
+.focus {
+    padding: 80px 0 40px;
+}
+
+.focus__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+
+.focus__content {
+    padding-top: 28px;
+    width: 470px;
+}
+
+.focus__header {
+    margin-bottom: 30px;
+}
+
+.focus__title {
+    margin-bottom: 30px;
+}
+
+.focus__text {
+    width: 400px;
+}
+
+.focus__image {
+    width: 570px;
+}

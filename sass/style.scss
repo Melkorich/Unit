@@ -1,0 +1,30 @@
+//base
+@import './base/reset';
+@import './base/vars';
+@import './base/mixins';
+@import './base/base';
+
+
+//sections
+@import './sections/header';
+@import './sections/footer';
+@import './sections/functional';
+@import './sections/cta';
+@import './sections/tasks';
+@import './sections/focus';
+@import './sections/price';
+@import './sections/clients';
+
+
+//blocks
+@import './blocks/button-nav';
+@import './blocks/form';
+@import './blocks/button';
+@import './blocks/card';
+@import './blocks/package';
+@import './blocks/button-outline';
+@import './blocks/slider';
+
+
+//media
+@import './media/media';

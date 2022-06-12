@@ -1,0 +1,44 @@
+.price {
+    position: relative;
+    padding: 90px 100px;
+    background-image: url('./../images/prices/plan-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::before {
+        @extend %overlay;
+    }
+}
+
+.price__inner {
+    position: relative;
+    z-index: 2;
+}
+
+.price__header {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.price__title {
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+
+.price__subtitle {
+    display: block;
+    color: #FFFFFF;
+}
+
+
+.price__list {
+    display: flex;
+    margin: 0 -15px;
+    justify-content: center;
+}
+
+.price__item {
+    display: flex;
+    padding: 0 15px;
+}
