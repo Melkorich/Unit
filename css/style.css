@@ -856,6 +856,7 @@ body {
 }
 @media (max-width: 599px) {
   .tasks__text {
+    margin: 0 auto;
     width: 290px;
     max-width: 100%;
     text-align: center;
@@ -1025,6 +1026,7 @@ body {
 }
 @media (max-width: 599px) {
   .focus__text {
+    margin: 0 auto;
     width: 100%;
     max-width: 290px;
     text-align: center;
@@ -1594,6 +1596,12 @@ body {
 
 .slider__item {
   padding: 0 5px;
+  /* Mobile XS */
+}
+@media (max-width: 599px) {
+  .slider__item {
+    padding: 0;
+  }
 }
 
 .slider__arrow {
