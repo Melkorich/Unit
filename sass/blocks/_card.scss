@@ -3,12 +3,35 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: 195px;
+    }
+
+    // /* Mobile */
+    @media (max-width: 899px) {
+        margin-top: 30px;
+        width: 270px;
+    }
+
+    // /* Mobile XS */
+    @media (max-width: 599px) {
+        margin-top: 40px;
+        width: 290px;
+    }
+
 }
 
 .card__img {
-    margin: 0 auto 40px;
+    margin: 0 auto 46px;
     width: 60px;
     height: 60px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin: 0 auto 22px;
+    }
 }
 
 .card__title {
@@ -18,4 +41,21 @@
     line-height: 1;
     color: var(--title-color);
     flex: 1 1 auto;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 10px;
+        line-height: 1.7;
+    }
+}
+
+.card__descr {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.1;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        line-height: 1.57;
+    }
 }

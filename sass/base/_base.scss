@@ -1,9 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 2;
     color: #808080;
 }
 
@@ -41,6 +45,11 @@ body {
     text-transform: uppercase;
     color: var(--accent);
 
+    /* Tablet */
+    @media (max-width: 899px) {
+        font-size: 14px;
+    }
+
 }
 
 .subtitle {
@@ -48,4 +57,19 @@ body {
     font-size: 48px;
     line-height: 1;
     color: var(--title-color);
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 38px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        font-size: 30px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 26px;
+    }
 }

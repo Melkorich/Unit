@@ -10,6 +10,21 @@
     &--active {
         background-color: rgba(48, 79, 254, 0.95);
     }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: 270px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 300px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 290px;
+    }
 }
 
 .package.package--active .button-outline {

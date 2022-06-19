@@ -1,6 +1,6 @@
 .price {
     position: relative;
-    padding: 90px 100px;
+    padding: 90px 100px 100px;
     background-image: url('./../images/prices/plan-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -9,6 +9,26 @@
     &::before {
         @extend %overlay;
     }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding: 50px 0 46px;
+        background-image: url('./../images/prices/plan-bg-900.jpg');
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding: 50px 0 35px;
+        background-image: url('./../images/prices/plan-bg-600.jpg');
+    }
+
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding: 40px 0 35px;
+        background-image: url('./../images/prices/plan-bg-320.jpg');
+    }
+
 }
 
 .price__inner {
@@ -19,11 +39,31 @@
 .price__header {
     margin-bottom: 80px;
     text-align: center;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 50px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-bottom: 40px;
+    }
 }
 
 .price__title {
     margin-bottom: 40px;
     color: #FFFFFF;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        margin-bottom: 10px;
+    }
 }
 
 .price__subtitle {
@@ -36,6 +76,26 @@
     display: flex;
     margin: 0 -15px;
     justify-content: center;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        // margin: 0;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -30px;
+    }
+}
+
+.price__list>* {
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-top: 30px;
+    }
 }
 
 .price__item {

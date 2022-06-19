@@ -42,7 +42,7 @@
         <header class="header">
             <div class="header__inner">
 
-                <div class="container header__buttons">
+                <div class="header__buttons">
                     <button class="button-nav" type="button">
                         <img class="button-nav__img" src="./images/header/burger.svg" alt="Навигация">
                     </button>
@@ -62,8 +62,11 @@
                     </div>
 
                     <form class="header__form">
-                        <input class="input" type="text" placeholder="Ваше имя">
-                        <input class="input" type="email" placeholder="Email">
+
+                        <input class="input header__form-input" type="text" placeholder="Ваше имя">
+
+                        <input class="input header__form-input" type="email" placeholder="Email">
+
                         <button class="button" type="submit">начать триал</button>
                     </form>
                 </div>
@@ -158,7 +161,7 @@
                             Начните использовать <span>ЮНИТ</span> уже сегодня.
                         </p>
 
-                        <button class="button">подключить</button>
+                        <a class="link" href="#price">подключить</a>
                     </div>
                 </div>
             </div>
@@ -226,7 +229,7 @@
             <!-- //section focus-->
 
             <!--section prices-->
-            <section class="price">
+            <section class="price" id="price">
                 <div class="container">
                     <div class="price__inner">
                         <header class="price__header">
@@ -363,6 +366,8 @@
                     </header>
 
                     <div class="clients__slider">
+
+                        <!--slider-->
                         <div class="slider">
 
                             <button class="slider__arrow slider__arrow--left">
@@ -371,6 +376,14 @@
                             <button class="slider__arrow slider__arrow--right">
                                 <img src="./images/icons/arrow-right.svg" alt="Вперед">
                             </button>
+
+                            <div class="slider__pagination">
+                                <button class="slider__pagination-item"></button>
+                                <button class="slider__pagination-item active"></button>
+                                <button class="slider__pagination-item"></button>
+                                <button class="slider__pagination-item"></button>
+                                <button class="slider__pagination-item"></button>
+                            </div>
 
                             <!--slider item-->
                             <div class="slider__item">
@@ -394,6 +407,7 @@
                             </div>
                             <!--slider item-->
                         </div>
+                        <!-- //slider-->
                     </div>
                 </div>
             </section>

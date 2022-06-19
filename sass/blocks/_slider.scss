@@ -1,5 +1,15 @@
 .slider {
     position: relative;
+    padding-bottom: 40px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding-bottom: 30px;
+    }
+}
+
+.slider__item {
+    padding: 0 5px;
 }
 
 .slider__arrow {
@@ -12,27 +22,72 @@
     background-color: #00C470;
     border-radius: 50%;
 
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        display: none;
+    }
+
     &--left {
         left: -100px;
         top: 53px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            left: -75px;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            left: -95px;
+            top: 65px;
+        }
     }
 
     &--right {
         right: -100px;
         top: 53px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            right: -75px;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            right: -95px;
+            top: 65px;
+        }
     }
 }
 
+
 .slider__text {
     margin-bottom: 30px;
+    max-width: 770px;
     font-weight: 500;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     text-align: center;
     color: #000000;
 
     p {
         margin-bottom: 15px;
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        line-height: 1.5;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 14px;
     }
 }
 
@@ -43,14 +98,50 @@
 
     font-size: 16px;
     line-height: 1.25;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 14px;
+        line-height: 1.21;
+    }
 }
 
 .slider__avatar {
     margin-right: 20px;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        margin-right: 10px;
+        width: 60px;
+        height: 60px;
+    }
 }
 
 .slider__job {
     margin-bottom: 5px;
     display: block;
     color: #00C470;
+}
+
+//pagination
+
+.slider__pagination {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    display: flex;
+    justify-content: center;
+
+    &-item {
+        margin: 0 5px;
+        width: 14px;
+        height: 14px;
+        background-color: #E1E1E1;
+        border-radius: 50%;
+    }
+
+    .active {
+        background-color: #00C470;
+    }
 }
