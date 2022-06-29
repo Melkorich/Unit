@@ -43,14 +43,40 @@
             <div class="header__inner">
 
                 <div class="header__buttons">
-                    <button class="button-nav" type="button">
-                        <img class="button-nav__img" src="./images/header/burger.svg" alt="Навигация">
+
+                    <button class="nav-icon" type="button">
+                        <div class="nav-icon__middle"></div>
                     </button>
-                    <button class="button-nav" type="button">
+
+                    <!-- Навигация -->
+                    <nav class="nav">
+                        <div class="nav__top">
+                            навигация по сайту
+                        </div>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#functional">Функционал</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#control">Гибкое управление</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#focus">Всегда в фокусе</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#price">Цены</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#clients">Отзывы клиентов</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <button class="header__button-search button-nav" type="button">
                         <img class="button-nav__img" src="./images/header/search.svg" alt="Поиск">
                     </button>
-                </div>
 
+                </div>
 
                 <div class="container header__content">
                     <h1 class="header__title">Юнит</h1>
@@ -168,7 +194,7 @@
             <!-- //block cta-->
 
             <!--section tasks-->
-            <section class="tasks">
+            <section class="tasks" id="control">
                 <div class="container">
                     <div class="tasks__row">
                         <div class="tasks__content">
@@ -199,7 +225,7 @@
             <!-- //section tasks-->
 
             <!-- section focus-->
-            <section class="focus">
+            <section class="focus" id="focus">
                 <div class="container">
                     <div class="focus__row">
                         <div class="focus__content">
@@ -356,7 +382,7 @@
             <!-- //section prices-->
 
             <!-- section clients-->
-            <section class="clients">
+            <section class="clients" id="clients">
                 <div class="container">
                     <header class="clients__header">
                         <h2 class="clients__title title">наши клиенты</h2>
@@ -446,6 +472,7 @@
         </footer>
     </div>
 
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

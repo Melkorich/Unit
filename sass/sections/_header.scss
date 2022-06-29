@@ -1,5 +1,6 @@
 .header {
     position: relative;
+    z-index: 99;
     // height: 870px;
     background-image: url('./../images/header/header-bg1.jpg');
     background-repeat: no-repeat;
@@ -23,6 +24,10 @@
     /* Mobile XS */
     @media (max-width: 599px) {
         background-image: url('./../images/header/header-bg-320.jpg');
+    }
+
+    &__button-search {
+        margin-left: auto;
     }
 
     &__inner {
