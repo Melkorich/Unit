@@ -80,6 +80,10 @@
         @media (max-width: 599px) {}
     }
 
+    &__buttons-nav-icon {
+        flex-shrink: 0;
+    }
+
     &__content {
         margin-bottom: 148px;
         text-align: center;

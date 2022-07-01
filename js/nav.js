@@ -1,3 +1,4 @@
+//работа с навигацией (кнопка бургер, меню)
 const navIcon = document.querySelector('.nav-icon');
 const nav = document.querySelector('.nav');
 
