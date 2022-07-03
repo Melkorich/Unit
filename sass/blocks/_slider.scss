@@ -24,8 +24,25 @@
     align-items: center;
     width: 54px;
     height: 54px;
-    background-color: #00C470;
+    background-color: #F5F5F5;
     border-radius: 50%;
+
+    transition: background-color 0.2s ease-in;
+
+    .slider__arrow-svg {
+        width: 24px;
+        height: 24px;
+        stroke: #00C470;
+        transition: stroke 0.2s ease-in;
+    }
+
+    &:hover {
+        background-color: #00C470;
+
+        .slider__arrow-svg {
+            stroke: #F5F5F5;
+        }
+    }
 
     /* Mobile XS */
     @media (max-width: 599px) {

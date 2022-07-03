@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
 
+    <!--owl carousel-->
+    <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.carousel.min.css">
+
     <!-- Open Graph -->
     <!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
     <!-- <meta property="og:type" content="website" />
@@ -403,50 +406,89 @@
                         </h3>
                     </header>
 
+                    <!--slider -wrapper-->
                     <div class="clients__slider">
 
-                        <!--slider-->
-                        <div class="slider">
+                        <button class="slider__arrow slider__arrow--left">
+                            <g class="slider__arrow-svg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 12H4" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10 18L4 12L10 6" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </g>
 
-                            <button class="slider__arrow slider__arrow--left">
-                                <img src="./images/icons/arrow-left.svg" alt="Назад">
-                            </button>
-                            <button class="slider__arrow slider__arrow--right">
-                                <img src="./images/icons/arrow-right.svg" alt="Вперед">
-                            </button>
+                        </button>
 
-                            <div class="slider__pagination">
-                                <button class="slider__pagination-item"></button>
-                                <button class="slider__pagination-item active"></button>
-                                <button class="slider__pagination-item"></button>
-                                <button class="slider__pagination-item"></button>
-                                <button class="slider__pagination-item"></button>
-                            </div>
+                        <button class="slider__arrow slider__arrow--right">
+                            <g class="slider__arrow-svg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 12H20" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14 6L20 12L14 18" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </g>
+                        </button>
 
-                            <!--slider item-->
+                        <div class="slider owl-carousel owl-theme" id="clients-slider">
+
                             <div class="slider__item">
                                 <div class="slider__text">
-                                    <p>
-                                        Это потрясающее приложение которое помогло мне завершить все мои дела, и сделать
-                                        дипломный проект раньше срока.
-                                    </p>
+                                    <p> Это потрясающее приложение которое помогло мне завершить все мои дела, и сделать
+                                        дипломный проект раньше срока.</p>
                                 </div>
                                 <div class="slider__author">
                                     <div class="slider__avatar">
-                                        <img src="./images/reviews/1.jpg" alt="фотография Николай Остапов">
+                                        <img src=".//images/reviews/1.jpg" alt="Avatar">
                                     </div>
-                                    <div class="slider__name">
-                                        <span class="slider__job">
-                                            Фрилансер
-                                        </span>
-                                        Николай Остапов
+                                    <div class="slider-item__author-desc">
+                                        <span class="slider__job">Фрилансер</span>
+                                        <span class="slider__name">Николай Остапов</span>
                                     </div>
                                 </div>
                             </div>
-                            <!--slider item-->
+
+                            <div class="slider__item">
+                                <div class="slider__text">
+                                    <p> Это потрясающее приложение которое помогло мне завершить все мои дела, и сделать
+                                        дипломный проект раньше срока.</p>
+                                </div>
+                                <div class="slider__author">
+                                    <div class="slider__avatar">
+                                        <img src=".//images/reviews/1.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="slider-item__author-desc">
+                                        <span class="slider__job">Фрилансер</span>
+                                        <span class="slider__name">Николай Остапов</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slider__item">
+                                <div class="slider__text">
+                                    <p> Это потрясающее приложение которое помогло мне завершить все мои дела, и сделать
+                                        дипломный проект раньше срока.</p>
+                                </div>
+                                <div class="slider__author">
+                                    <div class="slider__avatar">
+                                        <img src=".//images/reviews/1.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="slider-item__author-desc">
+                                        <span class="slider__job">Фрилансер</span>
+                                        <span class="slider__name">Николай Остапов</span>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <!-- //slider-->
+
                     </div>
+                    <!-- //slider -wrapper-->
+
                 </div>
             </section>
             <!-- //section clients-->
@@ -484,6 +526,12 @@
         </footer>
     </div>
 
+    <!--libs-->
+    <script src="./libs/jquery-3.6.0.min.js"></script>
+    <script src="./libs/owlcarousel2/owl.carousel.min.js"></script>
+
+    <!--custom js-->
+    <script src="./js/carousel.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/search.js"></script>
 </body>
